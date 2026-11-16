@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Rowdies:wght@300;400;700&family=Young+Serif&display=swap');
+
 body {
     background-color: rgb(49, 2, 72);
     margin: 0;
@@ -12,24 +14,30 @@ header, footer {
 
 header {
     height: 100px;
+    padding-left: 30px;
 }
 
 header h1 {
-    position:relative;
-    left: 15px;
-    top:30px;
+    margin-left: 10px;
+    margin-top: 40px;
+    font-family: "Young Serif", sans-serif;
+    font-weight: 400;
+    font-size: 30pt;
 }
 
-header a, header h4 {
-    position: relative;
-    left: 30px;
-    top: 50px;
+header a, header h3{
+    margin-top: 60px;
+    margin-left: 5px;
     color:wheat;
-    text-decoration: none;
 }
 
-img {
-    position: relative;
-    top: 20px;
-    left: 10px
+header a {
+    margin-top: 30px;
+    text-decoration: none;
+    margin-left: 90px;
+    font-size: large;
 }
+
+header img {
+    position: relative;
+    top: 20px;}
