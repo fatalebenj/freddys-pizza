@@ -1,43 +1,58 @@
-@import url('https://fonts.googleapis.com/css2?family=Rowdies:wght@300;400;700&family=Young+Serif&display=swap');
-
+@import url('https://fonts.googleapis.com/css2?family=Rowdies:wght@300;400;700&family=Rubik:ital,wght@0,300..900;1,300..900&family=Young+Serif&display=swap');
 body {
-    background-color: rgb(49, 2, 72);
+    background-color: #290044;
     margin: 0;
 }
 
-header, footer {
+#head1, footer {
     font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
     display: flex;
     color: white;
-    background-color: rgb(33, 32, 34);
+    background-color: #500071;
 }
 
-header {
-    height: 100px;
+#head1 {
+    height: 70px;
     padding-left: 30px;
 }
 
-header h1 {
+#head1 h1 {
     margin-left: 10px;
-    margin-top: 40px;
+    margin-top: 15px;
     font-family: "Young Serif", sans-serif;
     font-weight: 400;
     font-size: 30pt;
 }
 
-header a, header h3{
-    margin-top: 60px;
-    margin-left: 5px;
-    color:wheat;
+#head1 h3{
+    margin-left: 15px;
+    margin-top: 35px;
+    color:rgb(238, 227, 176);
 }
 
-header a {
-    margin-top: 30px;
-    text-decoration: none;
-    margin-left: 90px;
-    font-size: large;
-}
-
-header img {
+#head1 img {
     position: relative;
-    top: 20px;}
+    top: 10px;}
+
+#head2 {
+    margin-left: 150px;
+    height: 60px;
+    background-image: url(assets/xadrez.jpg); /* W3C */
+    width: 1500px;
+}
+
+#overlay-head2 {
+    background: linear-gradient(90deg,rgba(42, 123, 155, 0) 0%, rgba(87, 199, 133, 0) 27%, rgba(79, 0, 113, 0.504) 49%, rgb(79, 0, 113) 75%);
+    height: 60px;
+}
+
+#head2 h2 {
+    margin: 0 0 0 1200px;
+    font-size: 28pt;
+    font-family: 'Rowdies';
+    font-weight: 200;
+}
+
+#head2 a {
+    color:rgb(238, 227, 176);
+}
