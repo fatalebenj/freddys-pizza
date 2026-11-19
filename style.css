@@ -8,7 +8,7 @@ body {
     font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
     display: flex;
     color: white;
-    background-color: #500071;
+    background-color: #8A2A78;
 }
 
 #head1 {
@@ -30,6 +30,11 @@ body {
     color:rgb(238, 227, 176);
 }
 
+#head1 a {
+    color: white;
+    text-decoration: none;
+}
+
 #head1 img {
     position: relative;
     top: 10px;}
@@ -42,7 +47,7 @@ body {
 }
 
 #overlay-head2 {
-    background: linear-gradient(90deg,rgba(42, 123, 155, 0) 0%, rgba(87, 199, 133, 0) 27%, rgba(79, 0, 113, 0.504) 49%, rgb(79, 0, 113) 75%);
+    background: linear-gradient(90deg,rgba(42, 123, 155, 0) 0%, rgba(87, 199, 133, 0) 27%, rgba(138, 42, 120, 0.5) 49%, #8A2A78 75%);
     height: 60px;
 }
 
@@ -53,6 +58,75 @@ body {
     font-weight: 200;
 }
 
-#head2 a {
-    color:rgb(238, 227, 176);
+#head2 a, footer a {
+    color:rgb(255, 253, 243);
+}
+
+main {
+    background-color: #8A2A78;
+    margin-top: 90px;
+    margin-left: auto;
+    margin-right: auto;
+    height: 500px;
+    margin-bottom: 90px;
+    width: 900px;
+    border-radius: 20px;
+    box-shadow: rgba(79, 0, 113, 0.823) 0px 22px 70px 4px;
+    display: flex;
+    color: rgb(238, 227, 176);
+}
+
+
+main img {
+    margin-left: 60px;
+    margin-top: 30px;
+}
+
+main h1 {
+    margin: 30px 0 0 100px;
+    font-weight: 800;
+    font-size: 28pt;
+    color: rgb(255, 253, 243);
+}
+
+main form {
+    margin-left: 30px;
+}
+
+main label {
+    color: rgb(255, 253, 243);
+    font-weight: 700;
+    font-size: 20pt;
+
+}
+
+main input {
+    margin-bottom: 5px;
+}
+
+main button {
+    margin-top: 20px;
+    border-radius: 2px;
+    border: none;
+    padding:7px 10px;
+    font-size: 12pt;
+    font-family: 'Young Serif';
+    background-color: rgb(238, 227, 176);
+    color: #290044;
+}
+footer {
+    width: 100%;
+    max-width: 1912px;
+    max-height: 70px;
+    min-height: 20px;
+    margin: 0 auto 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 14px;
+    padding: 20px 0;
+}
+
+footer h4 {
+    margin-left: 10px;;
 }

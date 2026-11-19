@@ -11,7 +11,7 @@
     <header>
       <div id="head1">
         <img src="assets/logo.webp" width="150" height="150">
-        <h1>PIZZARIA DO FREDDY FAZBEAR</h1>
+        <a href="index.html"><h1>PIZZARIA DO FREDDY FAZBEAR</h1></a>
         <h3>desde 1987</h3>
       </div>
       <div id="head2">
@@ -20,7 +20,21 @@
         </div>
       </div>
     </header>
-    <main></main>
-    <footer></footer>
+    <main>
+      <img src="assets/freddy and pizza.png" alt="" width="350" height="453">
+      <form method="POST" onsubmit="validarMensagem()">
+        <h1>fale com a gente!</h1>
+        <label for="client">seu nome: <input type="text" id="client" name="nome"/ size="35"></label> <br>
+        <label for="fone">seu telefone: <input type="tel" id="fone" name="fone"/ size="31"></label> <br>
+        <label for="email">seu e-mail: <input type="email" id="email" name="email" size="34"/></label> <br>
+        <label for="message">sua mensagem: <br> <textarea id="message" name="mensagem" rows="10" cols="53"></textarea></label>
+        <button type="submit" id="enviarmensagem">enviar</button>
+      </form>
+    </main>
+    <footer>
+      <img src="assets/logo.webp" width="40">
+      <h4>  TI422 2026 <span style="color: #290044">\</span> por Benjamin Constant Silva, Emilly Ferreira, João Pedro Silva, Nicoly de Jesus e Thácila Vitorino</43>
+      <br/><a href="login.php"><h4>admin</h4></a>
+      </footer>
   </body>
 </html>
