@@ -9,15 +9,17 @@
     <body>
         <?php require 'view/header.php'; ?>
         <main class="area-login">
-            <h2>Login do Administrador</h2> <br>
+            <h2>Login do Administrador</h2>
             <form action="login.php" method="post">
-                <label>Usuário:</label><br>
+                <label>usuário:</label><br>
                 <input type="text" name="usuario" required size="20"><br><br>
-                <label>Senha:</label><br>
-                <input type="password" name="senha" required size="20"><br><br>
+                <label>senha:</label><br>
+                <input type="password" name="senha" required size="20"><br>
                 <button type="submit">Entrar</button>
             </form>
-            <p class="erro"><?php echo htmlspecialchars($erro); ?></p>
+            <?php if($erro != ''): ?>
+                <p class="erro"><?php echo $erro?></p>
+            <?php endif?>
         </main>
         <?php require 'view/footer.php'; ?>
     </body>

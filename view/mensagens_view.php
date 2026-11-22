@@ -25,7 +25,7 @@
                     </tr>
                 </thead>
                 <tbody>
-                <?php foreach ($Mensagens as $Mensagem ): ?>
+                <?php foreach ($Mensagens as $Mensagem): ?>
                     <tr class="mensagem">
                         <td><?php echo $Mensagem["nome"]; ?></td>
                         <td><?php echo $Mensagem["telefone"]; ?></td>

@@ -97,7 +97,7 @@ main h1 {
     color: rgb(255, 253, 243);
 }
 
-main form {
+main .formcontato {
     margin-left: 30px;
 }
 
@@ -112,8 +112,11 @@ main input {
     margin-bottom: 5px;
 }
 
-main button {
+.form-fim {
     margin-top: 20px;
+    display: flex;
+}
+main button {
     border-radius: 2px;
     border: none;
     padding:7px 10px;
@@ -121,12 +124,15 @@ main button {
     font-family: 'Young Serif';
     background-color: rgb(238, 227, 176);
     color: #290044;
+    height: min-content;
 }
+
 
 p#erroFormulario {
     display: none;
-    color: red;
+    height: min-content;
 }
+
 footer {
     width: 100%;
     min-height: 20px;
@@ -166,47 +172,86 @@ footer h4 {
 /* EMILLY*/
 .area-login {    
     text-align: center;
-    width:40%;
-    display: block;
+    width:30%;
+    display: flow-root;
+    padding: 10px 0;
+    height: auto;
+    font-weight: bold ;
  }
  
  .area-login input {
     padding: 10px;    
-    width: 40%; 
+    width: 50%; 
 } 
 
 .area-login button {    
     padding: 10px 25px;    
-    cursor: pointer; 
+    cursor: pointer;
+    margin-bottom: 10px;
 } 
 
 .area-mensagens {
     width: 60%;
-    display:block;
+    display: flow-root;    /* impede a margem do h1 de "vazar" pra fora da caixa */
     text-align: center;
-
+    height: auto;          /* deixa a caixa crescer conforme as mensagens */
+    min-height: 500px;
+    padding: 0 20px 30px;
+    box-sizing: border-box;
 }
-.area-mensagens a {    
-    color: wheat; 
+
+.area-mensagens h1 {
+    margin: 30px 0 20px 0;
+}
+
+.area-mensagens a {
+    color: wheat;
 }
 
 .area-mensagens table {
     margin-left: auto;
     margin-right: auto;
-	border-collapse: separate;
+    border-collapse: separate;
+    border-spacing: 0 8px;   
     width: 100%;
-    table-layout: flex;
+    table-layout: fixed;     /* colunas respeitam a largura da tabela */
 }
 
-.mensagem {    
-    background-color: rgb(49, 2, 72);    
-    padding: 15px;    
-    border-radius: 8px;
-    height: fit-content;
-    text-overflow: ellipsis;
-} 
+.area-mensagens th {
+    color: rgb(255, 253, 243);
+    padding: 8px 12px;
+}
 
+/* larguras das colunas: Mensagem fica com o resto do espaço */
+.area-mensagens th:nth-child(1) { width: 18%; }
+.area-mensagens th:nth-child(2) { width: 16%; }
+.area-mensagens th:nth-child(3) { width: 24%; }
 
-.erro {    
-    color: red; 
+.area-mensagens td {
+    background-color: rgb(49, 2, 72);
+    padding: 12px;
+    vertical-align: top;
+    text-align: left;
+    white-space: normal;
+    overflow-wrap: anywhere; /* quebra até textos sem espaço */
+    word-break: break-word;
+}
+
+.area-mensagens td:first-child {
+    border-radius: 8px 0 0 8px;
+}
+
+.area-mensagens td:last-child {
+    border-radius: 0 8px 8px 0;
+}
+
+.erro {
+    padding: 7px 15px;       
+    color: rgb(144, 0, 0);
+    margin: 0 auto;
+    border-radius: 2px;
+    font-size: 12pt;
+    font-family: 'Young Serif';
+    background-color: rgb(238, 227, 176);
+    width: fit-content;
 }
