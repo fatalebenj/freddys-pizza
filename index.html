@@ -6,6 +6,24 @@
     <title>Pizzaria do Freddy Fazbear - Início </title>
     <link rel="shortcut icon" href="assets/favicon.ico" type="image/x-icon">
     <link rel="stylesheet" href="style.css">
+     <script>
+        function validarFormulario() {
+            let nome = document.querySelector("#client").value;
+            let telefone = document.querySelector("#fone").value;
+            let email = document.querySelector("#email").value;
+            let mensagem = document.querySelector("#message").value;
+            let erro = document.querySelector("#erroFormulario");
+
+            if (nome === "" || mensagem === "" ) {
+                erro.innerText = "Preencha todos os campos!";
+                erro.style.display = "block";
+                return false;
+            }
+
+            alert("Mensagem enviada!");
+            return true;
+        }
+    </script>
   </head>
   <body>
     <header>
@@ -21,14 +39,16 @@
       </div>
     </header>
     <main>
+      <!-- NÃO USEI O FORMULARIO Q ME ENVIARAM POIS A TINHA ESSE (MSM COISAS)-->
       <img src="assets/freddy and pizza.png" alt="" width="350" height="453">
-      <form method="POST" onsubmit="validarMensagem()">
+      <form method="POST" action="salvarMensagem.php" onsubmit="return validarFormulario()">
         <h1>fale com a gente!</h1>
-        <label for="client">seu nome: <input type="text" id="client" name="nome"/ size="35"></label> <br>
-        <label for="fone">seu telefone: <input type="tel" id="fone" name="fone"/ size="31"></label> <br>
+        <label for="client">seu nome: <input type="text" id="client" name="nome" size="35"></label> <br>
+        <label for="fone">seu telefone: <input type="tel" id="fone" name="fone" size="31"></label> <br>
         <label for="email">seu e-mail: <input type="email" id="email" name="email" size="34"/></label> <br>
-        <label for="message">sua mensagem: <br> <textarea id="message" name="mensagem" rows="10" cols="53"></textarea></label>
+        <label for="message">digite sua mensagem: <br> <textarea id="message" name="mensagem" rows="10" cols="53"></textarea></label>
         <button type="submit" id="enviarmensagem">enviar</button>
+        <p id="erroFormulario"></p>
       </form>
     </main>
     <footer>
