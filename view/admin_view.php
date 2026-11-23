@@ -12,11 +12,11 @@
         <main class="area-admin">
             <h1>Oi, <i><?php echo $usuario;?></i>!</h1>
             <div class="container-botoes">
-                <a href="mensagens.php"><button class="adm-actions" id="botaoCardápio">
+                <a href="gerenciar_catalogo.php"><button class="adm-actions" id="botaoCardápio">
                     <img src="assets/menu_icon.png" width="150">
                     Gerenciar cardárpio
                 </button></a>
-                <a href="gerenciar_catalogo.php"><button class="adm-actions" id="botaoMensagens">
+                <a href="mensagens.php"><button class="adm-actions" id="botaoMensagens">
                     <img src="assets/mensagens_icon.png" width="150">
                     <p>Ver mensagens</p>
                 </button></a>
