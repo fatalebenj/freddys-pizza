@@ -85,7 +85,7 @@ main {
 }
 
 
-main img {
+main img#freddy {
     margin-left: 60px;
     margin-top: 30px;
 }
@@ -195,7 +195,7 @@ footer h4 {
     display: flow-root;    /* impede a margem do h1 de "vazar" pra fora da caixa */
     text-align: center;
     height: auto;          /* deixa a caixa crescer conforme as mensagens */
-    min-height: 500px;
+    min-height: 400px;
     padding: 0 20px 30px;
     box-sizing: border-box;
 }
@@ -245,6 +245,31 @@ footer h4 {
     border-radius: 0 8px 8px 0;
 }
 
+.area-admin {
+    width: 40%;
+    display: flow-root;
+    text-align: center;
+    height: auto; 
+    min-height: 400px;
+    padding: 10px 20px 30px;
+    box-sizing: border-box;
+}
+
+.area-admin h1 {
+    margin: 0 0 20px 0; 
+}
+
+.adm-actions {
+    width: 270px;
+    height: 270px;
+    cursor: pointer;
+    border-radius: 30px;
+    font-size: 16pt;
+}
+
+.adm-actions p {
+    margin:0;
+}
 .erro {
     padding: 7px 15px;       
     color: rgb(144, 0, 0);

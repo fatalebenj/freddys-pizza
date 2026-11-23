@@ -5,6 +5,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Login - Freddy Fazbear's Pizza</title>
         <link rel="stylesheet" href="style.css">
+        <link rel="shortcut icon" href="assets/favicon.ico" type="image/x-icon">
     </head>
     <body>
         <?php require 'view/header.php'; ?>

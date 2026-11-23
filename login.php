@@ -12,7 +12,7 @@
             session_regenerate_id(true);
             $_SESSION["dono_logado"] = true;
             $_SESSION["usuario"] = $usuario;
-            header("Location: mensagens.php");
+            header("Location: admin.php");
             exit;
         } else {
             $erro = "Usuário ou senha incorretos!";
